@@ -9,10 +9,22 @@ document.addEventListener("DOMContentLoaded", function() {
         coll[i].addEventListener("mouseout", display_on_hover);
     }
 
+    // function display_on_hover() {
+    //     console.log("hovering over: " + this.id);
+    //     this.classList.toggle("active");
+    //     var content = this.nextElementSibling;
+    //     console.log("content: " + content);
+    //     if (content.style.maxHeight) {
+    //         content.style.maxHeight = null;
+    //     } else {
+    //         content.style.maxHeight = content.scrollHeight + "px";
+    //     }
+    // }
     function display_on_hover() {
         console.log("hovering over: " + this.id);
         this.classList.toggle("active");
-        var content = this.nextElementSibling;
+        // this.getElementsByTagName("video")[0].classList.toggle("active");
+        var content = this.getElementsByClassName("text")[0];
         console.log("content: " + content);
         if (content.style.maxHeight) {
             content.style.maxHeight = null;

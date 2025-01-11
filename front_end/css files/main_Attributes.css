@@ -29,6 +29,7 @@ p {
     border-color: white;
     border-width: 1px;
 }
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -53,14 +54,72 @@ p {
 .navbar li a:hover {
     background-color: #889faf;
 }
+.navbar li:nth-child(4){
+    display: block;
+    color: white;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Arial, sans-serif;
+}
 
+.hidden {
+    display: none;
+}
+
+.pop_up_message {
+    background-image:url('../backgrounds/Background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: fixed;
+    border: 3px solid white;
+
+    padding-bottom: 100px;
+    z-index: 9;
+}
+
+.pop_up_message h2 {
+    font-family: Arial, sans-serif;
+}
+
+.forms_Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
+
+.pop_up_message input[type=text], .pop_up_message input[type=password] {
+    background-color: #3b4a67;
+    color: white;
+    width: 60%;
+}
+
+label {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.pop_up_message input[type=text], .pop_up_message input[type=password], label {
+    margin-left: 20%;
+}
+
+.pop_up_message button{
+
+    margin-left: 38%;
+}
+
+.forms_Container p{
+    color: red;
+    display:none
+}
 
 .video_ac6_trailer video {
     width: 100%;
     height: auto;
     padding-bottom: 100px;
 }
-
 
 .slideshow-container {
     width: 90%;
@@ -132,9 +191,10 @@ p {
 }
 
 
-
 @media (max-width: 425px) {
-
+    .pop_up_message {
+        width: 100%;
+    }
     .text_GameDescription{
         position: absolute;
         bottom: -60%;
@@ -165,9 +225,14 @@ p {
     }
 
 
+
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 426px) {
+    .pop_up_message {
+        width: 30%;
+    }
     .text_GameDescription {
         position: absolute;
         bottom: 0%;
@@ -205,6 +270,7 @@ p {
 }
 
 @media (min-width: 1024px){
+
     .text_Features {
         position: absolute;
         bottom: 0%;

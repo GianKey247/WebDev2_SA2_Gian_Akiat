@@ -56,6 +56,15 @@ p {
     background-color: #889faf;
 }
 
+.navbar li:nth-child(4){
+    display: block;
+    color: white;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Arial, sans-serif;
+}
+
 .video_lock-on, .video_movement, .video_missile {
     border-style: solid;
     border-color: #555555;
@@ -93,10 +102,10 @@ video {
     overflow-wrap: break-word;
     width: 92%;
 }
-@media (max-width: 0px) {
-
-}
-@media (min-width: 425px) {
+@media (max-width: 425px) {
+    .navbar li:nth-child(4){
+        float: left;
+    }
     .container_movement, .container_missile, .container_lock-on{
         justify-items: center;
         text-align: center;
@@ -110,7 +119,10 @@ video {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+    .navbar li:nth-child(4){
+        float: left;
+    }
     .container_lock-on,
     .container_missile {
         display: grid;
@@ -141,4 +153,8 @@ video {
         grid-row-start: 2;
     }
 }
-
+@media (min-width: 1024px) {
+    .navbar li:nth-child(4){
+        float: right;
+    }
+}

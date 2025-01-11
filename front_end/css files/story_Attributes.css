@@ -55,6 +55,14 @@ p {
     background-color: #889faf;
 }
 
+.navbar li:nth-child(4){
+    display: block;
+    color: white;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Arial, sans-serif;
+}
 
 .video_intro {
     position: relative;
@@ -169,6 +177,14 @@ hr{
 }
 
 @media (max-width: 425px) {
+    .navbar li:nth-child(4){
+        display: block;
+        color: white;
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: Arial, sans-serif;
+    }
     .text_intro{
         font-size: 1rem;
         left: 0%;
@@ -186,6 +202,9 @@ hr{
 }
 
 @media (min-width: 426px) {
+    .navbar li:nth-child(4){
+        float: left;
+    }
     .text_intro{
         font-size: 1rem;
         left: 10%;
@@ -199,6 +218,9 @@ hr{
 }
 
 @media (min-width: 1024px){
+    .navbar li:nth-child(4){
+        float: right;
+    }
     .text_intro{
         font-size: 1rem;
         left: 20%;

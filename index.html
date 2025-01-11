@@ -2,33 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="front_end/css%20files/main_Attributes.css">
-    <script src="front_end/javascript/slideshow_2_slide_test.js"></script>
+    <script src="front_end/javascript/slideshow_2_slides.js"></script>
+    <script src="front_end/javascript/login.js"></script>
+
 </head>
 <body>
 
-    <div class="navbar">
+    <div class="navbar hidden">
         <ul>
             <li><a href="index.html">Main Menu</a></li>
             <li><a href="front_end/story.html">Story</a></li>
             <li><a href="front_end/combat_and_movement.html">Combat & Movement</a></li>
+            <li >Welcome, Mercenary ID : <span id="user_name"></span>
+            </li>
         </ul>
     </div>
 
-    <div class="video_ac6_trailer">
+    <div class="pop_up_message">
+        <img src="front_end/characters/Emblem_ACVI_ALLMIND.webp" alt="All Mind" width="100%" height="100%">
+
+        <h2>You have to be a valid mercenary to view the contents of this website.</h2>
+
+        <div class="forms_Container">
+            <div class="login_form">
+                <h2>Sign Up</h2>
+                <label for="sign_up_username">Username:</label><br>
+                <input type="text" id="sign_up_username" name="username" required><br><br>
+
+                <label for="sign_up_password">Password:</label> <br>
+                <input type="password" id="sign_up_password" name="password" required><br><br>
+
+<!--                <input type="submit" id="sign_up_submit" value="Sign up">-->
+                <button id="sign_up_submit"> Sign up </button>
+                <p id="signup_error">Test</p>
+            </div>
+
+            <div class="login_form">
+                <h2>Log in</h2>
+                <label for="login_username">Username:</label><br>
+                <input type="text" id="login_username" name="username" required><br><br>
+
+                <label for="login_password">Password:</label> <br>
+                <input type="password" id="login_password" name="password" required><br><br>
+
+<!--                <input type="submit" id="log_in_submit" value="Log in">-->
+                <button id="log_in_submit"> Login </button>
+                <p id="login_error">Test</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video_ac6_trailer ">
         <video autoplay muted loop>
             <source src="front_end/video's/AC6_trailer.mp4" type="video/mp4" width="100%" height="100%">
         </video>
     </div>
 
-    <div class="text_Developers">
+    <div class="text_Developers ">
         <h1>Developers</h1>
         <h2>FromSoftware</h2>
         <p>The Japanese Game Development and Game Publishing company who made other well known games such as</p>
     </div>
 
-    <div class="slideshow-container">
+    <div class="slideshow-container ">
 
         <div class="pictures_Games fade">
 
@@ -68,8 +107,7 @@
 
     </div>
 
-
-    <div class="text_mechGamesDescription">
+    <div class="text_mechGamesDescription ">
         <p>
             Combining FromSoftware’s longstanding expertise in mech games <br>
             with their signature action gameplay, ARMORED CORE VI FIRES OF RUBICON <br>
@@ -77,7 +115,7 @@
         </p>
     </div>
 
-    <div class="slideshow-container">
+    <div class="slideshow-container ">
 
         <div class="video_Features fade">
 
